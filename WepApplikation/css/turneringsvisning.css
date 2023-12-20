@@ -1,0 +1,194 @@
+body {
+  font: var(--fontSize)/200% 'Bilbo Swash Caps', cursive;
+  background-image: url(https://img.freepik.com/premium-photo/close-up-crumpled-old-brown-paper-texture_1627-4553.jpg);
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.slot-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  color: lightgrey;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.turnering-section,
+.player-list {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  height: 100%; /* Fjern fast højde fra .player-list og .turnering-section */
+}
+
+.turnering-section {
+  background-color: lightgray;
+  font-size: 50px;
+  overflow-y: auto; /* Tillad kun .player-list at scroll, hvis indholdet er større end dens højde */
+
+}
+
+.player-list {
+  background-color: lightblue;
+  font-size: 50px;
+  overflow-y: auto; /* Tillad kun .player-list at scroll, hvis indholdet er større end dens højde */
+}
+
+.turnering-section h2,
+.player-list h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.turnering-section #turnering-container {
+  margin-top: 50px;
+}
+
+.turnering-section #turnering-container h3,
+.turnering-section #turnering-container input,
+.turnering-section #turnering-container button {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.turnering-section #turnering-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.player-list input {
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.player-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+
+/* Tilføj streg til tabeller */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+th {
+  background-color: lightgray;
+}
+
+td {
+  background-color: white;
+}
+
+/* Tilføj følgende stilarter for at gøre tabellen scrollable */
+#player-list-table,
+#turnering-spillere-table {
+  max-height: 300px; /* Du kan justere denne værdi efter behov */
+  overflow-y: auto;
+}
+
+/* Middelalderlig knapstil */
+.medieval-button {
+  font-family: 'Bilbo Swash Caps', cursive;
+  font-size: 24px;
+  padding: 12px 24px;
+  background-color: #8B0000;
+  color: #FFF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Middelalderlig knapstil, når den bliver holdt nede */
+.medieval-button:active {
+  background-color: #6B0000;
+  box-shadow: none;
+}
+
+
+
+/* Stil for pop-up vindue */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FEEBCD; /* Baggrundsfarve i middelalderstil */
+  padding: 20px;
+  border: 3px solid #8B0000; /* Kantfarve i middelalderstil */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup h3 {
+  text-align: center;
+  font-family: 'Bilbo Swash Caps', cursive; /* Skrifttype i middelalderstil */
+  font-size: 30px; /* Størrelsen af overskriften */
+  margin-bottom: 20px;
+}
+
+.popup label {
+  display: block;
+  font-family: 'Bilbo Swash Caps', cursive; /* Skrifttype i middelalderstil */
+  font-size: 20px; /* Størrelsen af etiketterne */
+  margin-bottom: 10px;
+}
+
+.popup input {
+  width: 100%;
+  font-size: 16px; /* Størrelsen af input-felterne */
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+.popup button {
+  font-family: 'Bilbo Swash Caps', cursive; /* Skrifttype i middelalderstil */
+  font-size: 20px; /* Størrelsen af knapperne */
+  padding: 10px 20px;
+  background-color: #8B0000;
+  color: #FFF;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup button:active {
+  background-color: #6B0000;
+  box-shadow: none;
+}

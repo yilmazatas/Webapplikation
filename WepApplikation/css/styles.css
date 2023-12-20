@@ -1,0 +1,90 @@
+body {
+  font: var(--fontSize)/200% 'Bilbo Swash Caps', cursive;
+  background-image: url(https://img.freepik.com/premium-photo/close-up-crumpled-old-brown-paper-texture_1627-4553.jpg);
+  background-size: cover;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  flex-direction: column;
+  margin-top: 100px;
+  
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.square {
+  width: 400px;
+  height: 200px;
+  background-color: lightgray;
+  margin: 20px;
+  padding: 40px;
+  text-align: center;
+  border-radius: 25px;
+  border: 5px solid black;
+  background-image: url(/img/frame.png);
+  background-size: cover;
+}
+
+h1 {
+  margin-top: 100px;
+  position: relative;
+  top: 65px;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 100px;
+  position: relative;
+  top: 65px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.slot-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  color: lightgrey;
+}
+
+.arrow-icon {
+  display: flex;
+  justify-content: left;
+  margin-top: 70px;
+  color: lightgrey;
+}
+
+
+
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+  
+}
+
+.magiclogo {
+  background: none;
+  height: 150px;
+  position: relative;
+  top: 50px;
+  background-image: none;
+  margin: 0;
+  padding: 0;
+
+}
+

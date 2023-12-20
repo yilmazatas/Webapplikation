@@ -1,0 +1,14 @@
+{
+  "spillere": [
+    { "navn": "Spiller 1", "nummer": "1234567" },
+    { "navn": "Spiller 2", "nummer": "2345678" },
+    { "navn": "Spiller 3", "nummer": "3456789" },
+    { "navn": "Spiller 4", "nummer": "4567890" },
+    { "navn": "Spiller 5", "nummer": "5678901" },
+    { "navn": "Spiller 6", "nummer": "6789012" },
+    { "navn": "Spiller 7", "nummer": "7890123" },
+    { "navn": "Spiller 8", "nummer": "8901234" },
+    { "navn": "Spiller 9", "nummer": "9012345" },
+    { "navn": "Spiller 10", "nummer": "0123456" }
+  ]
+}
